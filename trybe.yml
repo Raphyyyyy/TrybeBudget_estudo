@@ -1,0 +1,11 @@
+ignore_files:
+  - .trybe/
+  - .eslintrc.json
+  - .eslintignore
+  - cypress
+  - cypress.config.js
+  - vite.config.ts
+  - tsconfig.json
+  - tsconfig.node.json
+  - setupTests.ts
+  - server/db-clear.json

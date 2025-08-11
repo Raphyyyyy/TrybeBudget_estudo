@@ -1,0 +1,51 @@
+.usuarioLogado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10vw;
+  height: 6vh;
+  margin-right: 15vw;
+  font: 1vw sans-serif;
+  position: relative; 
+  cursor: pointer; 
+}
+
+.usuarioLogado .logoUsuario {
+  width: 1.5vw;
+  margin-right: 0.2vw; 
+}
+
+.dropdownMenu {
+  display: none; 
+  position: absolute;
+  top: 100%; /* Posiciona logo abaixo do contêiner do usuário */
+  background-color: white; 
+  list-style: none;
+  padding: 0; 
+  margin: 0;
+  border: 1px solid #ccc; 
+  z-index: 10;
+  width: 8vw; 
+  height: 3.5vh;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.dropdownMenu.aberto {
+  display: block; /* Mostra o dropdown quando aberto */
+}
+
+.dropdownMenu li {
+  padding: 0.2rem; 
+}
+
+.dropdownMenu li a {
+  text-decoration: none; /* Remove sublinhado */
+  color: black; /* Cor do texto */
+}
+
+.dropdownMenu li a:hover {
+  text-decoration: none; /* Remove sublinhado */
+  color: rgb(7, 148, 2); /* Cor do texto */
+} 
+

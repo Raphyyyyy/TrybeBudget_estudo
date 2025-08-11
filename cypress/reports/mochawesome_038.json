@@ -1,0 +1,156 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 0,
+    "pending": 0,
+    "failures": 3,
+    "start": "2025-01-22T19:39:59.664Z",
+    "end": "2025-01-22T19:41:04.589Z",
+    "duration": 64925,
+    "testsRegistered": 3,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7cd7e119-5562-46ff-875a-a23a5dc2f073",
+      "title": "",
+      "fullFile": "cypress/e2e/03.HomePage.cy.js",
+      "file": "cypress/e2e/03.HomePage.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "aa474620-413b-48f3-9425-7d6352d22452",
+          "title": "3 - Crie os elementos da página Home",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "A página deve conter o texto do banner",
+              "fullTitle": "3 - Crie os elementos da página Home A página deve conter o texto do banner",
+              "timedOut": null,
+              "duration": 21244,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains(/Chegou a hora de organizar suas finanças pessoais!/i).should(\"exist\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find content: '/Chegou a hora de organizar suas finanças pessoais!/i' but never did.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find content: '/Chegou a hora de organizar suas finanças pessoais!/i' but never did.\n    at Context.eval (webpack://od-fe-0x-planejamento-financeiro/./cypress/e2e/03.HomePage.cy.js:15:71)",
+                "diff": null
+              },
+              "uuid": "18f4b2a8-b5c7-4ad6-b520-002abc23c339",
+              "parentUUID": "aa474620-413b-48f3-9425-7d6352d22452",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "A página deve conter um link que redireciona para página `/salarios`",
+              "fullTitle": "3 - Crie os elementos da página Home A página deve conter um link que redireciona para página `/salarios`",
+              "timedOut": null,
+              "duration": 20851,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"a[href='/salarios']\").click();\ncy.location(\"pathname\").should(\"eq\", \"/salarios\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `a[href='/salarios']`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `a[href='/salarios']`, but never found it.\n    at Context.eval (webpack://od-fe-0x-planejamento-financeiro/./cypress/e2e/03.HomePage.cy.js:21:7)",
+                "diff": null
+              },
+              "uuid": "6f52ef69-15e6-4459-b1f6-44434e30dd65",
+              "parentUUID": "aa474620-413b-48f3-9425-7d6352d22452",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "A página deve conter um link que redireciona para página `/orcamento`",
+              "fullTitle": "3 - Crie os elementos da página Home A página deve conter um link que redireciona para página `/orcamento`",
+              "timedOut": null,
+              "duration": 20770,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"a[href='/orcamento']\").click();\ncy.location(\"pathname\").should(\"eq\", \"/orcamento\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `a[href='/orcamento']`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `a[href='/orcamento']`, but never found it.\n    at Context.eval (webpack://od-fe-0x-planejamento-financeiro/./cypress/e2e/03.HomePage.cy.js:26:7)",
+                "diff": null
+              },
+              "uuid": "50d8f05e-e00e-4b66-8025-068e8aa1bf89",
+              "parentUUID": "aa474620-413b-48f3-9425-7d6352d22452",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "18f4b2a8-b5c7-4ad6-b520-002abc23c339",
+            "6f52ef69-15e6-4459-b1f6-44434e30dd65",
+            "50d8f05e-e00e-4b66-8025-068e8aa1bf89"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 62865,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

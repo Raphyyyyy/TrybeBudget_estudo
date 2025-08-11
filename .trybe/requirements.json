@@ -1,0 +1,108 @@
+{
+  "requirements": [
+    {
+      "bonus": false,
+      "description": "1 - Crie uma página inicial de login com os seguintes campos e características",
+      "enabled": true,
+      "identifier": null,
+      "order": 1,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "2 - Faça o controle de navegação das rotas",
+      "enabled": true,
+      "identifier": null,
+      "order": 1,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "3 - Crie os elementos da página Home",
+      "enabled": true,
+      "identifier": null,
+      "order": 2,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "4 - Exiba uma mensagem quando não houver salários cadastrados",
+      "enabled": true,
+      "identifier": null,
+      "order": 2,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "5 - Desenvolva o formulário para adicionar um novo salário",
+      "enabled": true,
+      "identifier": null,
+      "order": 3,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "6 - Exiba as informações calculadas sobre salário líquido",
+      "enabled": true,
+      "identifier": null,
+      "order": 3,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "7 - Salve as informações calculadas e exiba uma lista com todos os salários",
+      "enabled": true,
+      "identifier": null,
+      "order": 4,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "8 - Remova um salário ao clicar no botão `Excluir salário`",
+      "enabled": true,
+      "identifier": null,
+      "order": 4,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "9 - Exiba uma mensagem quando não houver gastos cadastrados no orçamento",
+      "enabled": true,
+      "identifier": null,
+      "order": 5,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "10 - Crie um formulário para adicionar um novo gasto",
+      "enabled": true,
+      "identifier": null,
+      "order": 5,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "11 - Salve o gasto informado e exiba uma lista com todos os gastos cadastrados",
+      "enabled": true,
+      "identifier": null,
+      "order": 6,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "12 - Remova um gasto ao clicar no botão `Excluir`",
+      "enabled": true,
+      "identifier": null,
+      "order": 6,
+      "skill_ids": []
+    },
+    {
+      "bonus": true,
+      "description": "13 - Calcule qual a porcentagem do salário cada tipo de gasto representa",
+      "enabled": true,
+      "identifier": null,
+      "order": 7,
+      "skill_ids": []
+    }
+  ]
+}

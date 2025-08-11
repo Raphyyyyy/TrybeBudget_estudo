@@ -1,0 +1,225 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2025-01-20T19:28:55.245Z",
+    "end": "2025-01-20T19:28:56.104Z",
+    "duration": 859,
+    "testsRegistered": 7,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": -1,
+    "hasOther": false,
+    "skipped": 6,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "12af0d43-6dce-438f-a4af-424638753c05",
+      "title": "",
+      "fullFile": "cypress/e2e/10.ExpenseForm.cy.js",
+      "file": "cypress/e2e/10.ExpenseForm.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a6e93c77-4fa2-4e21-9744-07e7fd485105",
+          "title": "10 - Crie um formulário para adicionar um novo gasto",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "O formulário é exibido ao clicar no botão `Cadastrar gasto`",
+              "fullTitle": "10 - Crie um formulário para adicionar um novo gasto O formulário é exibido ao clicar no botão `Cadastrar gasto`",
+              "timedOut": null,
+              "duration": 686,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains(/Adicionar novo gasto/i).should(\"not.exist\");\ncy.get(\"button\").contains(/Cadastrar gasto/i).click();\ncy.contains(/Adicionar novo gasto/i).should(\"exist\");",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:3000/login \n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `10 - Crie um formulário par...`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:3000/login \n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:3000\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `10 - Crie um formulário par...`\n    at <unknown> (http://localhost:42529/__cypress/runner/cypress_runner.js:130947:74)\n    at visitFailedByErr (http://localhost:42529/__cypress/runner/cypress_runner.js:130339:12)\n    at <unknown> (http://localhost:42529/__cypress/runner/cypress_runner.js:130946:11)\n    at tryCatcher (http://localhost:42529/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:42529/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:42529/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:42529/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:42529/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://localhost:42529/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:42529/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:42529/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:42529/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://od-fe-0x-planejamento-financeiro/./cypress/e2e/10.ExpenseForm.cy.js:8:7)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:3000\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)",
+                "diff": null
+              },
+              "uuid": "919c9c03-b541-4048-9283-f42da5a33d32",
+              "parentUUID": "a6e93c77-4fa2-4e21-9744-07e7fd485105",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O formulário deixa de ser exibido ao clicar no botão `Cancelar`",
+              "fullTitle": "10 - Crie um formulário para adicionar um novo gasto O formulário deixa de ser exibido ao clicar no botão `Cancelar`",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains(/Adicionar novo gasto/i).should(\"not.exist\");\ncy.get(\"button\").contains(/Cadastrar gasto/i).click();\ncy.contains(/Adicionar novo gasto/i).should(\"exist\");\ncy.get(\"button\").contains(/Cancelar/i).click();\ncy.contains(/Adicionar novo gasto/i).should(\"not.exist\");",
+              "err": {},
+              "uuid": "1fbf2760-5bb6-4e8d-9d4b-455e37d718b3",
+              "parentUUID": "a6e93c77-4fa2-4e21-9744-07e7fd485105",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "O formulário possui a estrutura pedida",
+              "fullTitle": "10 - Crie um formulário para adicionar um novo gasto O formulário possui a estrutura pedida",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"button\").contains(/Cadastrar gasto/i).click();\ncy.get(\"input[name='name']\").should(\"exist\");\ncy.get(\"select[name='type']\").should(\"exist\");\ncy.get(\"option[value='needs']\").should(\"exist\");\ncy.get(\"option[value='wants']\").should(\"exist\");\ncy.get(\"option[value='savings']\").should(\"exist\");\ncy.get(\"input[name='amount']\").should(\"exist\");\ncy.get(\"button\").contains(/Salvar/i).should(\"exist\");\ncy.get(\"button\").contains(/Cancelar/i).should(\"exist\");",
+              "err": {},
+              "uuid": "29d6e6f2-d3cc-4521-8e51-a389ba626dce",
+              "parentUUID": "a6e93c77-4fa2-4e21-9744-07e7fd485105",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "O botão `Salvar` começa desabilitado quando o formulário é exibido",
+              "fullTitle": "10 - Crie um formulário para adicionar um novo gasto O botão `Salvar` começa desabilitado quando o formulário é exibido",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"button\").contains(/Cadastrar gasto/i).click();\ncy.get(\"button\").contains(/Salvar/i).should(\"be.disabled\");",
+              "err": {},
+              "uuid": "eb733f53-ca02-4e0f-ba02-bf7b08e9e495",
+              "parentUUID": "a6e93c77-4fa2-4e21-9744-07e7fd485105",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "O botão `Salvar` permanece desabilitado quando o campo `name` não é preenchido corretamente",
+              "fullTitle": "10 - Crie um formulário para adicionar um novo gasto O botão `Salvar` permanece desabilitado quando o campo `name` não é preenchido corretamente",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"button\").contains(/Cadastrar gasto/i).click();\ncy.get(\"select[name='type']\").select(\"needs\");\ncy.get(\"input[name='amount']\").clear().type(\"1300\");\ncy.get(\"input[name='name']\").clear();\ncy.get(\"button\").contains(/Salvar/i).should(\"be.disabled\");\ncy.get(\"input[name='name']\").clear().type(\"Aluguel\");\ncy.get(\"button\").contains(/Salvar/i).should(\"be.enabled\");",
+              "err": {},
+              "uuid": "7032e14b-9608-4cb4-bf28-70107212bcfa",
+              "parentUUID": "a6e93c77-4fa2-4e21-9744-07e7fd485105",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "O botão `Salvar` permanece desabilitado quando o campo `amount` não é preenchido corretamente",
+              "fullTitle": "10 - Crie um formulário para adicionar um novo gasto O botão `Salvar` permanece desabilitado quando o campo `amount` não é preenchido corretamente",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"button\").contains(/Cadastrar gasto/i).click();\ncy.get(\"input[name='name']\").clear().type(\"Aluguel\");\ncy.get(\"select[name='type']\").select(\"needs\");\ncy.get(\"input[name='amount']\").clear().type(\"0\");\ncy.get(\"button\").contains(/Salvar/i).should(\"be.disabled\");\ncy.get(\"input[name='amount']\").clear().type(\"1\");\ncy.get(\"button\").contains(/Salvar/i).should(\"be.enabled\");",
+              "err": {},
+              "uuid": "fad10c32-698c-43e5-a6ad-e8e1330f1e5d",
+              "parentUUID": "a6e93c77-4fa2-4e21-9744-07e7fd485105",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "O botão `Salvar` é habilitado quando todos os campos são preenchidos corretamente",
+              "fullTitle": "10 - Crie um formulário para adicionar um novo gasto O botão `Salvar` é habilitado quando todos os campos são preenchidos corretamente",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"button\").contains(/Cadastrar gasto/i).click();\ncy.get(\"input[name='name']\").clear().type(\"Aluguel\");\ncy.get(\"select[name='type']\").select(\"needs\");\ncy.get(\"input[name='amount']\").clear().type(\"1\");\ncy.get(\"button\").contains(/Salvar/i).should(\"be.enabled\");",
+              "err": {},
+              "uuid": "4123a3b1-6137-4318-a499-4328280cd805",
+              "parentUUID": "a6e93c77-4fa2-4e21-9744-07e7fd485105",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "919c9c03-b541-4048-9283-f42da5a33d32"
+          ],
+          "pending": [],
+          "skipped": [
+            "1fbf2760-5bb6-4e8d-9d4b-455e37d718b3",
+            "29d6e6f2-d3cc-4521-8e51-a389ba626dce",
+            "eb733f53-ca02-4e0f-ba02-bf7b08e9e495",
+            "7032e14b-9608-4cb4-bf28-70107212bcfa",
+            "fad10c32-698c-43e5-a6ad-e8e1330f1e5d",
+            "4123a3b1-6137-4318-a499-4328280cd805"
+          ],
+          "duration": 686,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

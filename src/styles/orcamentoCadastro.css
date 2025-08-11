@@ -1,0 +1,121 @@
+.addOrcForm .resForm {
+
+  position: absolute;
+  top: 0;
+  left: 12vw;
+  z-index: 1000;
+  padding-left: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  width: 35vw;
+  height: 62vh;
+
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+.addOrcForm input:focus {
+  border: 2px solid #a9e34b;
+  outline: none;
+}
+
+.fundoEscuro{
+  position: absolute;
+  width: 100vw;
+  height: 120vh;
+
+  top: -35vh;
+  left: -25vw;
+
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.357);
+  z-index: 1;
+}
+
+.addOrcForm .botoes .salvarBot {
+  display: flex;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 1rem;
+  white-space: nowrap;
+
+  color: rgb(0, 0, 0);
+
+  border: none;
+  cursor: pointer;
+  
+  padding: 1rem 2rem;
+  margin-right: 1rem;
+  width: 7vw;
+  border-radius: 1rem;
+}
+
+
+.salvarBot {
+  background-color: #a9e34b;
+}
+
+.salvarBot:hover {
+  background-color: #adff29;
+}
+
+.salvarBot:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.salvarBot:hover:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.addOrcForm h1{
+  font-size: 1.3rem;
+  font-weight: 700;
+
+  color: black;
+  
+  margin:0 0 4vh 0 !important;
+
+}
+
+.addOrcForm h3{
+  font-size: 1.1rem !important;
+  color: black !important;
+  font-weight: 700;
+  margin-top: 1.5vh;
+
+}
+
+.addOrcForm p{
+  font-size: 1rem;
+  color: rgb(62, 62, 62);
+  font-weight: 400;
+  margin-bottom: 0.5rem !important;
+
+}
+
+
+.addOrcForm input, select{
+  width: 30vw;
+  
+  padding: 10px;
+  margin: 0 0 1.5rem 0;
+
+  border: 1px solid #ccc;
+  border-radius: 1vh;
+  background-color: white;
+}
+
+.addOrcForm .botoes{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}

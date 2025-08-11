@@ -1,0 +1,118 @@
+.orcIndPai {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 10%;
+    border-radius: 2rem;
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    background-color: white;
+
+    position: relative;
+
+}
+
+.orcIndFilho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.orcIndIcone {
+    width: 7%;
+    height: 100%;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.orcIndIcone img {
+  width: 100%;
+  height: auto;
+}
+
+.orcIndTexto {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.orcIndTexto h3 {
+    font-size: 1.2rem;
+    margin: 0.6rem 0;
+    font-weight: 400;
+    color: #212529;
+}
+
+.orcIndTexto p {
+    font-size: 0.8rem;
+    font-weight: 600;
+
+    border-radius: 1.2rem;
+    padding: 0.4rem;
+    background-color: var(--cinza-claro);
+    width: fit-content;
+}
+
+.orcIndValor {
+    width: 25%;
+    height: 100%;
+
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.orcIndPai hr {
+    display: block;
+    width: 100%;
+    height: 0.1rem;
+
+    border-top: 1px solid var(--cinza-claro);
+    margin: 0.5rem 0;
+}
+
+
+.orcIndDeletar{
+    position: absolute;
+
+    /* display: none; */
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 5vw;
+    height: 2vh;
+    padding: 1rem;
+
+    top: 5.5vh;
+    left: 34.5vw;
+
+    margin-right: 1rem;
+    border-radius: 3rem;
+    border: 1px solid lightslategray;
+    background-color: white;
+
+    z-index: 999;
+
+    font-size: 1rem;
+
+    cursor: pointer;
+
+}
+
+.orcIndDeletar img {
+    margin-left: 0.8rem;
+}
+
+.orcIndDeletar:hover{
+    background-color: var(--verde-claro);
+}

@@ -1,0 +1,15 @@
+.headerPai{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 15vh;
+  overflow: hidden;
+}
+
+.headerPai .logoTrybe{
+  width: 9vw;
+  height: auto;
+  margin-left: 15vw;
+}
+

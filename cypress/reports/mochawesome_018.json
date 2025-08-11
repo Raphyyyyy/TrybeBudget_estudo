@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-01-20T20:07:47.317Z",
+    "end": "2025-01-20T20:08:13.025Z",
+    "duration": 25708,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e3bac590-3ed5-421a-846a-bd7c4110279c",
+      "title": "",
+      "fullFile": "cypress/e2e/04.NoIcomesMessage.cy.js",
+      "file": "cypress/e2e/04.NoIcomesMessage.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4c8d27cc-7c23-405a-afc1-c947788ccc50",
+          "title": "4 - Exiba uma mensagem quando não houver salários cadastrados",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Os textos informando que não há salários cadastrados e o botão `Adicionar salário` são exibidos",
+              "fullTitle": "4 - Exiba uma mensagem quando não houver salários cadastrados Os textos informando que não há salários cadastrados e o botão `Adicionar salário` são exibidos",
+              "timedOut": null,
+              "duration": 23420,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"a[href='/salarios']\").click();\ncy.contains(/Nenhum salário adicionado/i).should(\"exist\");\ncy.contains(/Adicione um salário para fazer o cálculo/i).should(\"exist\");\ncy.contains(/Adicionar salário/i).should(\"exist\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `a[href='/salarios']`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `a[href='/salarios']`, but never found it.\n    at Context.eval (webpack://od-fe-0x-planejamento-financeiro/./cypress/e2e/04.NoIcomesMessage.cy.js:15:7)",
+                "diff": null
+              },
+              "uuid": "7388fca8-13c9-45a6-92ce-6296acab3333",
+              "parentUUID": "4c8d27cc-7c23-405a-afc1-c947788ccc50",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "7388fca8-13c9-45a6-92ce-6296acab3333"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 23420,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

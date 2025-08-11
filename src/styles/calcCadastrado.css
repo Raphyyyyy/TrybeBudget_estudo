@@ -1,0 +1,168 @@
+.calcCadastradoPai{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: first baseline;
+
+    width: 80%;
+    height: 90%;
+
+    margin: 2.2% 10%;
+}
+
+.saldosHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 10%;
+
+}
+
+.saldosHeader h1{
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 1rem;
+}
+
+
+
+.saldosHeader .addSalario{
+  width: 10.5vw;
+  height: 5vh;
+  background-color: var(--verde-claro);
+
+  padding: 0.5rem;
+
+  font-size: 1rem;
+  font-weight: 700;
+
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.saldosHeader .addSalario:hover {
+  background-color: #adff29;
+}
+
+.saldos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 80%;
+    height: 45%;
+
+    border-radius: 2rem;
+    margin-left: 10%;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+
+    background-color: white;
+
+    border: 1px solid rgba(119, 136, 153, 0.471);
+
+    position: relative; 
+    /* isso é necessário para posicionar o delete certo */
+}
+
+.saldos .saldosHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 95%;
+    height: 3%;
+
+    margin-top: 1rem;
+}
+
+.saldos .saldosHeader .salLiqTitulo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-size: 1rem;
+    font-weight: 700;
+
+}
+
+.salarios{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: baseline;
+
+  width: 95%;
+
+  margin-top: 1rem;
+}
+
+.salarios h3{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--verde-medio);
+
+  margin: 1rem 0;
+  
+}
+
+.salarios p, .saldosData p{
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: lightslategray;
+}
+
+.calcCadastradoPai hr{
+  width: 95%;
+  margin-top: 1rem;
+
+  border: none;
+  border-top: 1px solid rgba(119, 136, 153, 0.471);
+}
+
+.saldosData{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    width: 95%;
+    height: 5%;
+    
+    margin-top: 1rem 0;
+}
+
+.deletaSal{
+    position: absolute;
+
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 8vw;
+    height: 2vh;
+    padding: 1rem;
+
+    top: 5vh;
+    left: 32vw;
+
+    margin-right: 1rem;
+    border-radius: 3rem;
+    border: 1px solid lightslategray;
+    background-color: white;
+
+    z-index: 999;
+
+    cursor: pointer;
+
+}
+
+.deletaSal:hover{
+    background-color: var(--verde-claro);
+}

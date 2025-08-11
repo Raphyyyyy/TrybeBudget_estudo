@@ -1,0 +1,6 @@
+{
+  "/": "/index",
+  "/users*": "/664/users$1",
+  "/incomes*": "/664/incomes$1",
+  "/expenses*": "/664/expenses$1"
+}

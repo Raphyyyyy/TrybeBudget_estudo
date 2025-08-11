@@ -1,0 +1,222 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 1,
+    "pending": 0,
+    "failures": 5,
+    "start": "2025-01-20T20:21:59.210Z",
+    "end": "2025-01-20T20:23:46.172Z",
+    "duration": 106962,
+    "testsRegistered": 6,
+    "passPercent": 16.666666666666664,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a0ad19f5-a5b3-4b7f-9ca3-5e3945e37232",
+      "title": "",
+      "fullFile": "cypress/e2e/01.LoginPage.cy.js",
+      "file": "cypress/e2e/01.LoginPage.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c8ae2ff2-92f4-4d74-91ee-d8ad43b3b17c",
+          "title": "1 - Crie uma página inicial de login com os seguintes campos e características",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "A rota para a página deve ser `/login`",
+              "fullTitle": "1 - Crie uma página inicial de login com os seguintes campos e características A rota para a página deve ser `/login`",
+              "timedOut": null,
+              "duration": 690,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.location('pathname').should('eq', '/login');",
+              "err": {},
+              "uuid": "e6408292-8068-41bb-b447-933fa0219136",
+              "parentUUID": "c8ae2ff2-92f4-4d74-91ee-d8ad43b3b17c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Existe um formulário com campo `email`, campo `password` e botão `enviar`",
+              "fullTitle": "1 - Crie uma página inicial de login com os seguintes campos e características Existe um formulário com campo `email`, campo `password` e botão `enviar`",
+              "timedOut": null,
+              "duration": 20359,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(`input[name=email]`).should('exist');\ncy.get(\"input[name=password]\").should('exist');\ncy.contains(/Entrar/i).should('exist').should(\"be.disabled\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: expected '<h2>' to be 'disabled'",
+                "estack": "AssertionError: Timed out retrying after 20000ms: expected '<h2>' to be 'disabled'\n    at Context.eval (webpack://od-fe-0x-planejamento-financeiro/./cypress/e2e/01.LoginPage.cy.js:20:43)",
+                "diff": null
+              },
+              "uuid": "5ee1248d-3f17-4948-b4f3-c6289bcecb0c",
+              "parentUUID": "c8ae2ff2-92f4-4d74-91ee-d8ad43b3b17c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O botão `enviar` deve estar desabilitado caso o campo `email` não seja preenchido com um formato de email válido",
+              "fullTitle": "1 - Crie uma página inicial de login com os seguintes campos e características O botão `enviar` deve estar desabilitado caso o campo `email` não seja preenchido com um formato de email válido",
+              "timedOut": null,
+              "duration": 20808,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"input[name=email]\").clear().type(\"formato@invalido\");\ncy.get(\"input[name=password]\").type(\"WrongPassword\");\ncy.contains(/Entrar/i).should(\"be.disabled\");\ncy.get(\"input[name=email]\").clear().type(\"formato@valido.com\");\ncy.contains(/Entrar/i).should(\"be.enabled\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: expected '<h2>' to be 'disabled'",
+                "estack": "AssertionError: Timed out retrying after 20000ms: expected '<h2>' to be 'disabled'\n    at Context.eval (webpack://od-fe-0x-planejamento-financeiro/./cypress/e2e/01.LoginPage.cy.js:27:27)",
+                "diff": null
+              },
+              "uuid": "5ce6a1fd-dae3-485f-b235-49556d8b1c9b",
+              "parentUUID": "c8ae2ff2-92f4-4d74-91ee-d8ad43b3b17c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Uma mensagem de erro é exibida ao tentar fazer login com um email não cadastrado",
+              "fullTitle": "1 - Crie uma página inicial de login com os seguintes campos e características Uma mensagem de erro é exibida ao tentar fazer login com um email não cadastrado",
+              "timedOut": null,
+              "duration": 20781,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"input[name=email]\").type(\"email@naocadastrado.com\");\ncy.get(\"input[name=password]\").type(\"mudar123\");\ncy.contains(/Entrar/i).click();\ncy.contains(/Erro ao fazer login/i).should('exist');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find content: '/Erro ao fazer login/i' but never did.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find content: '/Erro ao fazer login/i' but never did.\n    at Context.eval (webpack://od-fe-0x-planejamento-financeiro/./cypress/e2e/01.LoginPage.cy.js:39:40)",
+                "diff": null
+              },
+              "uuid": "6dd266dc-f3d9-49eb-95e0-74864c4b5550",
+              "parentUUID": "c8ae2ff2-92f4-4d74-91ee-d8ad43b3b17c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Uma mensagem de erro é exibida ao tentar fazer login com a senha errada",
+              "fullTitle": "1 - Crie uma página inicial de login com os seguintes campos e características Uma mensagem de erro é exibida ao tentar fazer login com a senha errada",
+              "timedOut": null,
+              "duration": 20845,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"input[name=email]\").type(_constants.USER_EMAIL);\ncy.get(\"input[name=password]\").type(\"WrongPassword\");\ncy.contains(/Entrar/i).click();\ncy.contains(/Erro ao fazer login/i).should('exist');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find content: '/Erro ao fazer login/i' but never did.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find content: '/Erro ao fazer login/i' but never did.\n    at Context.eval (webpack://od-fe-0x-planejamento-financeiro/./cypress/e2e/01.LoginPage.cy.js:46:40)",
+                "diff": null
+              },
+              "uuid": "192bdbd9-07b1-4e1b-bd4c-ccc726e5af59",
+              "parentUUID": "c8ae2ff2-92f4-4d74-91ee-d8ad43b3b17c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "A pessoa é redirecionada para a rota `/` quando o login é feito com sucesso ao usar login e senha corretos",
+              "fullTitle": "1 - Crie uma página inicial de login com os seguintes campos e características A pessoa é redirecionada para a rota `/` quando o login é feito com sucesso ao usar login e senha corretos",
+              "timedOut": null,
+              "duration": 20813,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"input[name=email]\").type(_constants.USER_EMAIL);\ncy.get(\"input[name=password]\").type(_constants.USER_PASSWORD);\ncy.contains(/Entrar/i).click();\ncy.location('pathname').should('eq', '/');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: expected '/login' to equal '/'",
+                "estack": "AssertionError: Timed out retrying after 20000ms: expected '/login' to equal '/'\n    at Context.eval (webpack://od-fe-0x-planejamento-financeiro/./cypress/e2e/01.LoginPage.cy.js:53:28)",
+                "diff": "- '/login'\n+ '/'\n"
+              },
+              "uuid": "101a6e76-c189-4726-96b1-286245eafeed",
+              "parentUUID": "c8ae2ff2-92f4-4d74-91ee-d8ad43b3b17c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e6408292-8068-41bb-b447-933fa0219136"
+          ],
+          "failures": [
+            "5ee1248d-3f17-4948-b4f3-c6289bcecb0c",
+            "5ce6a1fd-dae3-485f-b235-49556d8b1c9b",
+            "6dd266dc-f3d9-49eb-95e0-74864c4b5550",
+            "192bdbd9-07b1-4e1b-bd4c-ccc726e5af59",
+            "101a6e76-c189-4726-96b1-286245eafeed"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 104296,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

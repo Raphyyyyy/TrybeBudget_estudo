@@ -1,0 +1,88 @@
+{
+  "users": [
+    {
+      "email": "user@domain.com",
+      "password": "$2b$10$ePXfBbqeJPiHFS9quPyrPOimg2U3MhDtcOZRTSBI31f5XkS9bfKou",
+      "name": "User Name",
+      "id": 1
+    },
+    {
+      "email": "rafa@teste.com",
+      "password": "$2a$10$70kqi6YGLFHG5bCSXbnWAObKn3T83tucQQmUoSyNZ4dON2agxcXxO",
+      "name": "Rafa Nunes",
+      "id": 2
+    },
+    {
+      "email": "teste@email.com",
+      "password": "$2a$10$VxSSzJ3ualWbCdTkvERrguoA4YGENg/MM1RgAdOYTgYEzni5CPSRO",
+      "name": "Pipoca",
+      "id": 3
+    },
+    {
+      "email": "teste@email2.com",
+      "password": "$2a$10$yDz9hrYz77d/QwHylNWaf.v3wToRcxViSrWp/ywrwmlwx/Pjfw3h6",
+      "name": "567456",
+      "id": 4
+    },
+    {
+      "email": "vasukiidragon@gmail.com",
+      "password": "$2a$10$IKcgfgajKV9RiWkuro/McOLwlhVpnc.trrE8ye31KQ9BzRELlhhA6",
+      "name": "Matolisk",
+      "id": 5
+    },
+    {
+      "email": "email@mail.com",
+      "password": "$2a$10$f.5ftMRVLaBgOy21q7JKnO5IjTXvba/DYj0T/RCKU0peuuIn5FLr2",
+      "name": "nome",
+      "id": 6
+    }
+  ],
+  "incomes": [
+    {
+      "salarioBruto": "R$ 100,00",
+      "descontos": "R$ 10,00",
+      "data": "2025-02-12",
+      "dependentes": "0",
+      "salarioLiquido": 82.5,
+      "id": 1
+    },
+    {
+      "salarioBruto": "R$ 555,00",
+      "descontos": "R$ 10,00",
+      "data": "2025-06-08",
+      "dependentes": "1",
+      "salarioLiquido": 503.375,
+      "id": 2
+    },
+    {
+      "salarioBruto": "R$ 100,00",
+      "descontos": "R$ 2,00",
+      "data": "2025-06-30",
+      "dependentes": "0",
+      "salarioLiquido": 90.5,
+      "id": 3
+    },
+    {
+      "salarioBruto": "R$ 100,00",
+      "descontos": "R$ 10,00",
+      "data": "2025-07-15",
+      "dependentes": "0",
+      "salarioLiquido": 82.5,
+      "id": 4
+    }
+  ],
+  "expenses": [
+    {
+      "name": "Curso ",
+      "type": "savings",
+      "amount": 9,
+      "id": 5
+    },
+    {
+      "name": "Faculdade",
+      "type": "savings",
+      "amount": 90,
+      "id": 6
+    }
+  ]
+}

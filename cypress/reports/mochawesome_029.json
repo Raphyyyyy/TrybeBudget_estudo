@@ -1,0 +1,133 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2025-01-22T19:06:36.160Z",
+    "end": "2025-01-22T19:07:20.864Z",
+    "duration": 44704,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ba843905-5852-47ca-951e-d17b9eb38f24",
+      "title": "",
+      "fullFile": "cypress/e2e/02.ProtectedRoute.cy.js",
+      "file": "cypress/e2e/02.ProtectedRoute.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4a92ebea-cde9-495a-b98d-567bdcdc13e3",
+          "title": "2 - Faça o controle de navegação das rotas",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Caso a pessoa não esteja logada ao acessar a rota `/`, ela deve ser redirecionada para `/login`",
+              "fullTitle": "2 - Faça o controle de navegação das rotas Caso a pessoa não esteja logada ao acessar a rota `/`, ela deve ser redirecionada para `/login`",
+              "timedOut": null,
+              "duration": 21825,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"http://localhost:3000/\");\ncy.location(\"pathname\").should(\"eq\", \"/login\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: expected '/' to equal '/login'",
+                "estack": "AssertionError: Timed out retrying after 20000ms: expected '/' to equal '/login'\n    at Context.eval (webpack://od-fe-0x-planejamento-financeiro/./cypress/e2e/02.ProtectedRoute.cy.js:14:28)",
+                "diff": "- '/'\n+ '/login'\n"
+              },
+              "uuid": "a9ce0fe3-2770-4a78-ba87-a075edd9a135",
+              "parentUUID": "4a92ebea-cde9-495a-b98d-567bdcdc13e3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Caso a pessoa já esteja logada ao acessar a rota `/login`, ela deve ser redirecionada para a rota `/`",
+              "fullTitle": "2 - Faça o controle de navegação das rotas Caso a pessoa já esteja logada ao acessar a rota `/login`, ela deve ser redirecionada para a rota `/`",
+              "timedOut": null,
+              "duration": 20929,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"http://localhost:3000/login\");\n(0, _helperFunctions.logInWithValidCredentials)();\ncy.location(\"pathname\").should(\"eq\", \"/\");\ncy.visit(\"http://localhost:3000/login \");\ncy.location(\"pathname\").should(\"eq\", \"/\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: expected '/login' to equal '/'",
+                "estack": "AssertionError: Timed out retrying after 20000ms: expected '/login' to equal '/'\n    at Context.eval (webpack://od-fe-0x-planejamento-financeiro/./cypress/e2e/02.ProtectedRoute.cy.js:20:28)",
+                "diff": "- '/login'\n+ '/'\n"
+              },
+              "uuid": "91747b93-8a69-4078-b068-7130dc04a92b",
+              "parentUUID": "4a92ebea-cde9-495a-b98d-567bdcdc13e3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "a9ce0fe3-2770-4a78-ba87-a075edd9a135",
+            "91747b93-8a69-4078-b068-7130dc04a92b"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 42754,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

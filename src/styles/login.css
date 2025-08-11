@@ -1,0 +1,167 @@
+/* Estilos gerais */
+.login_pai {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.login_logo {
+  position: absolute;
+  top: 8vh;
+  left: 12vw;
+}
+
+.login_dir,
+.login_esq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 100vh;
+}
+
+.login_esq {
+  display: flex;
+  flex-direction: column;
+}
+
+.login_esq h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 1.5rem;
+  margin-bottom: 10%;
+}
+
+/* Estilos do formulário */
+.login form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+}
+
+.login form label {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+.login .form_group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.login .form_group input:focus {
+  border: 2px solid #a9e34b;
+  outline: none;
+}
+
+.login form input {
+  width: 25vw;
+  min-width: 40%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 1vh;
+}
+
+.botao_entrar {
+  display: flex;
+  width: 100%;
+}
+
+.botao_entrar .botao_ativo {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 1rem;
+  background-color: #a9e34b;
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.botao_entrar .botao_ativo:hover {
+  background-color: #adff29;
+}
+
+.botao_ativo:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.botao_ativo:hover:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.login_nova_conta a {
+  color: #7ca737;
+}
+
+.login_nova_conta a:hover {
+  color: #adff29;
+}
+
+.link_CriarConta{
+  background: none;
+  border: none;
+  color: #7ca737;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+  font: inherit;
+}
+
+/* Direita */
+.login_dir {
+  background-image: url("../../public/back_gif.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.login_dir h2 {
+  color: #a9e34b;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 5rem;
+  margin: 12vw;
+  text-shadow: #000000 10px 0px 10px;
+}
+
+/* Botão da senha */
+.password_container {
+  position: relative;
+  width: 100%;
+}
+
+.password_container input {
+  width: calc(100% - 50px);
+  padding-right: 50px;
+  background-color: transparent;
+}
+
+.ativa_senha {
+  position: absolute;
+  right: 10px;
+  top: 1vw;
+  
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #7ca737;
+}
+

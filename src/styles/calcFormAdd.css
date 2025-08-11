@@ -1,0 +1,225 @@
+.addSalarioForm, .resultadoForm {
+
+  position: absolute;
+  top: 0;
+  left: 12vw;
+  z-index: 100;
+  padding-left: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  width: 35vw;
+  height: 65vh;
+
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+.addSalarioForm input:focus {
+  border: 2px solid #a9e34b;
+  outline: none;
+}
+
+
+.fundoEscuro{
+  position: absolute;
+  width: 100vw;
+  height: 120vh;
+
+  top: -35vh;
+  left: -25vw;
+
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.357);
+  z-index: 1;
+}
+
+.addSalarioForm h1{
+  font-size: 1.3rem;
+  font-weight: 700;
+
+  color: black;
+  
+  margin-bottom: 3rem;
+}
+
+.addSalarioForm h3{
+  font-size: 1.1rem !important;
+  color: black !important;
+  font-weight: 700;
+
+}
+
+.addSalarioForm p{
+  font-size: 1rem;
+  color: rgb(62, 62, 62);
+  font-weight: 400;
+}
+
+.addSalarioForm input{
+  width: 30vw;
+  
+  padding: 10px;
+  margin: 0.3rem 0 1.5rem 0;
+
+  border: 1px solid #ccc;
+  border-radius: 1vh;
+}
+
+.addSalarioForm .botoes{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.calculateBot,
+.cancelBot,.voltarBot,.salvarSalarioBot {
+  display: flex;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 1rem;
+  white-space: nowrap;
+
+  color: rgb(0, 0, 0);
+
+  border: none;
+  cursor: pointer;
+  
+  padding: 1rem 2rem;
+  margin-right: 1rem;
+  width: 7vw;
+  border-radius: 1rem;
+}
+
+
+.calculateBot,.salvarSalarioBot {
+  background-color: #a9e34b;
+}
+
+.calculateBot:hover,
+.cancelBot:hover ,
+.salvarSalarioBot:hover,
+.voltarBot:hover {
+  background-color: #adff29;
+}
+
+.calculateBot:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.calculateBot:hover:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.resultadoForm{
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 45vh;
+}
+
+
+.resultadoForm .tituloRes{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  width: 100%;
+  margin: 2rem 0;
+
+
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: black;
+}
+
+
+.resultadoForm .tituloRes .fecharX{
+  padding-right: 2rem;
+}
+
+.resultadoForm .resultados{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.resultadoForm .resultados .salario{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  padding-right: 3rem;
+}
+
+.resultadoForm .resultados .salario h3{
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--verde-medio);
+}
+
+.resultadoForm hr {
+  width: 100%;
+  height: 2px;
+
+  margin: 1rem 0rem;
+  border: none;
+
+  background-color: rgba(119, 136, 153, 0.226);
+}
+
+.resultDetalhes{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  width: 80%;
+}
+
+.detalhesCalculadora{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.detalhesCalculadora p{
+  font-size: 1rem;
+  font-weight: 700;
+  
+  line-height: 1.5rem;
+
+  color: black;
+}
+
+.botoesSalvar{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+
+  margin-top: 5vh;
+  width: 100%;
+}
+
+.voltarBot,.salvarSalarioBot {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}

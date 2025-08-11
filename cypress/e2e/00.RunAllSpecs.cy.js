@@ -1,0 +1,13 @@
+import './01.LoginPage.cy';
+import './02.ProtectedRoute.cy';
+import './03.HomePage.cy';
+import './04.NoIcomesMessage.cy';
+import './05.IncomeForm.cy';
+import './06.NetIncomeCalc.cy';
+import './07.IcomesList.cy';
+import './08.DeleteIncome.cy';
+import './09.NoExpensesMessage.cy';
+import './10.ExpenseForm.cy';
+import './11.ExpensesList.cy';
+import './12.DeleteExpense.cy';
+import './13.CategoriesAmount.cy';

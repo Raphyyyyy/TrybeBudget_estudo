@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "email": "user@domain.com",
+      "password": "$2a$10$9nt0xn7hlBSV805A2U.dduNfo/qaS/2hT.mnvdGtJ/1ROnnCfxW2y",
+      "name": "User Name",
+      "id": 1
+    }
+  ],
+  "incomes": [],
+  "expenses": []
+}

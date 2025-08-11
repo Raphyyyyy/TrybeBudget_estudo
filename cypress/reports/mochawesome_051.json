@@ -1,0 +1,130 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-01-22T21:37:00.058Z",
+    "end": "2025-01-22T21:37:27.718Z",
+    "duration": 27660,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "cdeed579-8962-451d-9783-5f396d85d8fc",
+      "title": "",
+      "fullFile": "cypress/e2e/02.ProtectedRoute.cy.js",
+      "file": "cypress/e2e/02.ProtectedRoute.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a2eb8758-9b72-475d-91fa-fde1497e01db",
+          "title": "2 - Faça o controle de navegação das rotas",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Caso a pessoa não esteja logada ao acessar a rota `/`, ela deve ser redirecionada para `/login`",
+              "fullTitle": "2 - Faça o controle de navegação das rotas Caso a pessoa não esteja logada ao acessar a rota `/`, ela deve ser redirecionada para `/login`",
+              "timedOut": null,
+              "duration": 645,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"http://localhost:3000/\");\ncy.location(\"pathname\").should(\"eq\", \"/login\");",
+              "err": {},
+              "uuid": "c5c4c74f-89e8-4d05-a552-e2636524c66c",
+              "parentUUID": "a2eb8758-9b72-475d-91fa-fde1497e01db",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Caso a pessoa já esteja logada ao acessar a rota `/login`, ela deve ser redirecionada para a rota `/`",
+              "fullTitle": "2 - Faça o controle de navegação das rotas Caso a pessoa já esteja logada ao acessar a rota `/login`, ela deve ser redirecionada para a rota `/`",
+              "timedOut": null,
+              "duration": 20879,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"http://localhost:3000/login\");\n(0, _helperFunctions.logInWithValidCredentials)();\ncy.location(\"pathname\").should(\"eq\", \"/\");\ncy.visit(\"http://localhost:3000/login \");\ncy.location(\"pathname\").should(\"eq\", \"/\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: expected '/login' to equal '/'",
+                "estack": "AssertionError: Timed out retrying after 20000ms: expected '/login' to equal '/'\n    at Context.eval (webpack://od-fe-0x-planejamento-financeiro/./cypress/e2e/02.ProtectedRoute.cy.js:20:28)",
+                "diff": "- '/login'\n+ '/'\n"
+              },
+              "uuid": "3f11214e-5476-4330-900e-308c12e1d303",
+              "parentUUID": "a2eb8758-9b72-475d-91fa-fde1497e01db",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c5c4c74f-89e8-4d05-a552-e2636524c66c"
+          ],
+          "failures": [
+            "3f11214e-5476-4330-900e-308c12e1d303"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 21524,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

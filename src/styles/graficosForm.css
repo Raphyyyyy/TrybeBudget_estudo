@@ -1,0 +1,79 @@
+.graficosPai {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  margin: 1vh 2vw 0 2vw;
+  gap: 1vw;
+}
+
+.grafFilho {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.grafFilho p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.captions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.captions h1 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.captions h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #666;
+}
+
+.grafico {
+  width: 100%;
+  height: 1.2vh;
+  background-color: #eee;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.graficoBar {
+  height: 100%;
+  border-radius: 2rem;
+  transition: width 0.8s ease-in-out;
+}
+
+
+.barNeeds {
+  background-color: #4caf50;
+}
+
+.barWants {
+  background-color: #e91e63;
+}
+
+.barInvest {
+  background-color: #2196f3;
+}
+
+.graficosPai hr {
+  height: auto;
+  width: 0.1vw;
+  background-color: rgba(211, 211, 211, 0.607);
+  border: none;
+  margin: 0 1vw;
+}
